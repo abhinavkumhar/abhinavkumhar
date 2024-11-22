@@ -1,15 +1,12 @@
-#spanSmall {
-    font-size: 2rem;
-    text-align: center;
-}
-
 .primary-color {
     color: var(--primary-);
+}
+.secondary-color {
+    color: var(--secondary-);
 }
 
 
 /* Aligin Items Center */
-
 .center {
     display: flex;
     justify-content: center;
@@ -23,10 +20,6 @@
     grid-column-gap: 10rem;
 }
 
-.mg-8 {
-    margin-top: -9rem;
-}
-
 .proj-row {
     padding: 5rem;
     display: grid;
@@ -34,15 +27,6 @@
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 10rem;
     grid-row-gap: 5rem;
-}
-
-h3 {
-    font-size: 2.5rem;
-    font-family: 'Caladea', serif;
-}
-
-.mt-5 {
-    margin-top: 5rem;
 }
 
 .h3-small {
@@ -73,13 +57,6 @@ a {
 .about-h3 {
     font-family: 'Onest', sans-serif;
     color: var(--territory-);
-}
-
-.head-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -4rem;
 }
 
 /* New Code for utility */
