@@ -1,0 +1,103 @@
+#spanSmall {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.primary-color {
+    color: var(--primary-);
+}
+
+
+/* Aligin Items Center */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-row {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10rem;
+}
+
+.mg-8 {
+    margin-top: -9rem;
+}
+
+.proj-row {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10rem;
+    grid-row-gap: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'Caladea', serif;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.h3-small {
+    font-size: var(--mediumText-);
+    font-family: 'Onest', sans-serif;
+    margin-top: 1rem;
+    color: var(--territory-);
+}
+
+.about-large {
+    font-size: var(--mediumText2-);
+}
+
+/* Use as a Sub heading for Headings */
+
+.about-small {
+    font-size: 1.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-);
+}
+
+.about-h3 {
+    font-family: 'Onest', sans-serif;
+    color: var(--territory-);
+}
+
+.head-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+/* New Code for utility */
+.section-heading {
+    color: var(--primary-);
+    font-size: var(--largeText-);
+}
+
+.section-highlight {
+    font-size: 1.3rem;
+}
+
+/* New Code for utility responsive */
+@media screen and (max-width: 768px) {
+    .section-heading {
+        font-size: 2.5rem;
+    }
+    .section-highlight {
+        font-size: 1rem;
+    }
+}

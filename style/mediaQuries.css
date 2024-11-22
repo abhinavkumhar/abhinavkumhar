@@ -1,0 +1,142 @@
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+        float: right;
+    }
+
+    .nav-btns {
+        width: 100%;
+        height: 100vh;
+        background: var(--primary-);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+    }
+
+    .nav-btns.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .hamburger i[name="menu"] {
+        display: block;
+    }
+
+    .hamburger i[name="close"] {
+        display: none;
+    }
+
+    .nav-btns.active~.hamburger i[name="menu"] {
+        display: none;
+    }
+
+    .nav-btns.active~.hamburger i[name="close"] {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 1rem;
+    }
+
+    .header img {
+        height: 60px;
+        width: 60px;
+    }
+
+    #element {
+        font-size: 1rem;
+    }
+
+    .firstSection img {
+        margin-top: -3rem;
+    }
+
+    .aboutSection {
+        margin-top: 3rem;
+    }
+
+    #header_h1 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #spanSmall {
+        font-size: 0.7rem;
+    }
+
+    #h2-main {
+        font-size: 2rem;
+        margin-top: -5rem;
+    }
+
+    .about-heading {
+        margin-top: 3rem;
+    }
+
+    .aboutContent p {
+        font-size: var(--smallText-);
+        margin: 0 -0.10rem !important;
+    }
+
+    .aboutSectionImg img {
+        width: 15vh;
+        height: auto;
+    }
+
+    .about-row {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .prfOfEdu:nth-child(2),
+    .prfOfEdu:nth-child(3) {
+        margin-top: 5rem;
+    }
+
+    .hobbies-row {
+        grid-template-columns: 1fr;
+    }
+
+    .prjImg img {
+        height: 45%;
+        width: 45%;
+    }
+
+    #h2-sub {
+        font-size: var(--largeText-);
+    }
+
+    .about-h3 {
+        font-size: 2rem;
+    }
+
+    .footerSection h1 {
+        white-space: normal;
+        font-size: 2rem;
+    }
+
+    .footerSection {
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footerSection p {
+        font-size: var(--smallText-);
+    }
+
+    .aboutSection {
+        margin: 0 2rem;
+    }
+}
