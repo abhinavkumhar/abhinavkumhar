@@ -29,17 +29,6 @@
     grid-row-gap: 5rem;
 }
 
-.h3-small {
-    font-size: var(--mediumText-);
-    font-family: 'Onest', sans-serif;
-    margin-top: 1rem;
-    color: var(--territory-);
-}
-
-.about-large {
-    font-size: var(--mediumText2-);
-}
-
 .about-small {
     font-size: 1.2rem;
     align-items: center;
@@ -55,16 +44,21 @@ a {
 .about-h3 {
     font-family: 'Onest', sans-serif;
     color: var(--territory-);
+    font-size: 2.5rem;
 }
 
 /* New Code for utility */
 .section-heading {
     color: var(--primary-);
-    font-size: var(--largeText-);
+    font-size: 3rem;
 }
 
 .section-highlight {
     font-size: 1.3rem;
+}
+
+.mt-1{
+    margin-top: 1rem;
 }
 
 /* New Code for utility responsive */

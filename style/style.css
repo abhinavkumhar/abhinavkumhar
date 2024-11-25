@@ -17,7 +17,7 @@ body {
 #element,
 .typed-cursor {
     color: var(--secondary-);
-    font-size: var(--mediumText-);
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -29,7 +29,7 @@ body {
 .hobbiesSection,
 .about-row,
 .projectsSection,
-.footerSection {
+.footerSection{
     margin-top: 3rem;
 }
 
@@ -38,9 +38,6 @@ body {
 :root {
     --primary-: #0b1032;
     --secondary-: #ece9e2;
-    --largeText-: 3rem;
-    --mediumText-: 1.5rem;
-    --mediumText2-: 2rem;
 }
 
 /* =============================== NAVIGATION MENU START =============================== */
@@ -78,7 +75,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: var(--mediumText-);
+    font-size: 1.5rem;
 }
 
 .hamburger {
@@ -99,7 +96,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--largeText-);
+    font-size: 3rem;
     color: var(--secondary-);
     background: url("/images/header-bg-clip.jpg") center bottom/cover;
     position: relative;
@@ -326,7 +323,7 @@ nav ul li a {
 }
 
 .fa-brands {
-    font-size: var(--mediumText2-);
+    font-size: 2rem;
 }
 
 .fa-envelope {

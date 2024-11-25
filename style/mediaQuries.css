@@ -73,6 +73,10 @@
         align-items: center;
     }
 
+    .prfOfEdu:nth-child(1) {
+        margin-top: 3rem;
+    }
+
     .tagLine {
         font-size: 0.7rem;
     }
@@ -87,7 +91,7 @@
     }
 
     .aboutContent p {
-        font-size: 0.8rem;
+        font-size: 21px;
         margin: 0 -0.10rem !important;
     }
 
