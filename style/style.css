@@ -221,9 +221,7 @@ nav ul li a {
 .aboutContent {
     margin: 1rem 0 10rem;
     text-align: center;
-    font-size: var(--mediumText-);
     text-wrap: balance;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
 .aboutContent p {
