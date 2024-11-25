@@ -87,7 +87,7 @@
     }
 
     .aboutContent p {
-        font-size: var(--smallText-);
+        font-size: 1.2rem;
         margin: 0 -0.10rem !important;
     }
 
@@ -138,5 +138,9 @@
 
     .aboutSection {
         margin: 0 2rem;
+    }
+
+    .work-section {
+        margin: auto;
     }
 }
