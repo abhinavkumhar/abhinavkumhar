@@ -54,7 +54,8 @@
         <ul class="nav-btns">
             <li class="click secondary-color"><a href="#home">Home</a></li>
             <li class="click secondary-color"><a href="#about">About</a></li>
-            <li class="click secondary-color"><a href="https://sites.google.com/view/projects-by-abhinav/project-page">Projects</a></li>
+            <li class="click secondary-color"><a
+                    href="https://sites.google.com/view/projects-by-abhinav/project-page">Projects</a></li>
             <li class="click secondary-color"><a href="#footer">Contact Me</a></li>
         </ul>
         <div class="hamburger">
@@ -78,8 +79,43 @@
         </section>
     </header>
 
+    <!-- =============================== MY WORK =============================== -->
+    <section class="work-section container">
+        <h2 class="center section-heading">My Work</h2>
+        <br>
+        <div class="work-container">
+            <div class="work-box">
+                <img src="./images/MyWork/1.png" alt="Work 1" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/2.png" alt="Work 2" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/3.png" alt="Work 3" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/4.png" alt="Work 4" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/5.png" alt="Work 5" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/6.png" alt="Work 6" onclick="showImage(this)">
+            </div>
+            <div class="work-box">
+                <img src="./images/MyWork/7.png" alt="Work 7" onclick="showImage(this)">
+            </div>
+        </div>
+        <!-- Modal for full-screen image -->
+        <div id="imageModal" class="modal" onclick="closeImage()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+    </section>
+
     <!-- =============================== PROJECTS =============================== -->
-    <section class="projectsSection">
+    <!-- <section class="projectsSection">
         <h2 class="center section-heading">Projects</h2>
         <br>
         <p class="section-highlight center"><b>My Work</b></p>
@@ -88,7 +124,7 @@
                 onclick="location.href='https://sites.google.com/view/projects-by-abhinav/project-page'">View
                 Projects</button>
         </div>
-    </section>
+    </section> -->
 
     <!-- =============================== ABOUT =============================== -->
     <section class="aboutSection" id="about">
@@ -102,7 +138,10 @@
             <img src="./images/aboutImg.jpg" alt="About Img Loading...">
         </div>
         <div class="aboutContent center">
-            <p>During the lockdown, I discovered a passion for coding and began learning it as a hobby. This journey into programming opened up exciting opportunities for me. I also developed an interest in graphic design and started learning it as a hobby. Combining coding and graphic designing has allowed me to create visually appealing and functional digital projects.</p>
+            <p>During the lockdown, I discovered a passion for coding and began learning it as a hobby. This journey
+                into programming opened up exciting opportunities for me. I also developed an interest in graphic design
+                and started learning it as a hobby. Combining coding and graphic designing has allowed me to create
+                visually appealing and functional digital projects.</p>
         </div>
         <div class="profile">
             <p class="section-highlight center"><b>Profile</b></p>

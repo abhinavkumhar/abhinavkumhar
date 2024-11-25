@@ -26,3 +26,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Function to show the modal with the clicked image
+function showImage(imgElement) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.style.display = 'flex';
+    modalImg.src = imgElement.src; // Set the modal image to the clicked image
+
+    // Disable scrolling on the body and html
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+}
+
+// Function to close the modal
+function closeImage() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+
+    // Re-enable scrolling on the body and html
+    document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto';
+}
