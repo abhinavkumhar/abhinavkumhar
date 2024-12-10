@@ -48,3 +48,32 @@ function closeImage() {
     document.body.style.overflow = 'auto';
     document.documentElement.style.overflow = 'auto';
 }
+
+// Function to animate progress bars
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+        const targetPercent = bar.getAttribute('data-percent');
+        if (!bar.classList.contains('animated')) { // Prevent re-animation
+            bar.style.width = `${targetPercent}%`;
+            bar.classList.add('animated');
+        }
+    });
+}
+
+// Function to check if an element is in view
+function isElementInView(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top < window.innerHeight && // Top is visible
+        rect.bottom >= 0 // Bottom is within viewport
+    );
+}
+
+// Add event listener for scroll
+window.addEventListener('scroll', () => {
+    const skillsSection = document.getElementById('skills');
+    if (isElementInView(skillsSection)) {
+        animateProgressBars();
+    }
+});

@@ -29,7 +29,7 @@ body {
 .hobbiesSection,
 .about-row,
 .projectsSection,
-.footerSection{
+.footerSection {
     margin-top: 3rem;
 }
 
@@ -100,6 +100,11 @@ nav ul li a {
     color: var(--secondary-);
     background: url("/images/header-bg-clip.jpg") center bottom/cover;
     position: relative;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .header::before {
@@ -245,6 +250,52 @@ nav ul li a {
 
 .profile {
     margin-top: -8rem;
+}
+
+/* =============================== SKILLS SECTION =============================== */
+#skills {
+    text-align: center;
+    padding: 50px;
+    /* background-color: #f8dd94; */
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.progress {
+    width: 80%;
+    max-width: 600px;
+    height: 20px;
+    background: #aaa8a8;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: var(--primary-);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px 0 0 10px;
+    transition: width 2s ease-out;
 }
 
 /* =============================== HOBBIES SECTION =============================== */
